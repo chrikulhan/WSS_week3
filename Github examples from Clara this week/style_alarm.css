@@ -1,0 +1,20 @@
+#real-alert{
+    font-size: small;
+    color: red;
+}
+
+#test-only{
+    font-size: xx-large;
+    color: darkgreen;
+}
+
+.missile-link{
+    /*h1, div, are all block elements, block will stack the
+    elements one on TOP of each other instead of one
+    after another in the same line (or inline)*/
+    display: block;
+}
+
+/*Other options:
+color, background -color, height, width, margin, border,
+*/

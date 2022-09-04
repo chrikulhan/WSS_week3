@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class and ID</title>
+    <link rel="stylesheet" type="text/css" href="class_and_id.css">
+</head>
+<body>
+
+<h1>An example web page</h1>
+<!--<div></div> content is used to chunk code into sections -->
+
+<!--Check out the class designations vs. the id designations.
+You are able to do things to each section using class(section), and then
+you are able to more specific things using id (section-1, section-2)-->
+
+<!--Appropriate AND common to give an element both a class
+and an id.-->
+
+<div id="section-1" class="section">
+    <h2>Section 1</h2>
+
+<!--Q: WHY would you use class vs id in websites?
+Answer: you want to select more than one element and treat
+them in the same way.-->
+
+    <div class="content">
+        <p>Content, content, content</p>
+        <p>Content, content, content</p>
+        <p>Content, content, content</p>
+    </div>
+</div>
+
+<div id="section-2" class="section">
+    <h2>Section 2</h2>
+
+    <div class="content">
+        <p>Info, info, info</p>
+        <p id="important">Really critical info</p>
+        <p>Info, info, info</p>
+    </div>
+</div>
+
+
+</body>
+</html>
