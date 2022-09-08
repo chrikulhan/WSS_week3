@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML</title>
+</head>
+<body>
+
+<P>Enter your name:</P>
+
+<!--The simplest input possible.-->
+<!--<input>-->
+
+<!--Different types of input elements:-->
+<!--<br>Enter your name: <input type="text">-->
+<!--<br>Enter your email: <input type="email">-->
+<!--<br>What's your lucky number? <input type="date">-->
+<!--<br>What time is it? <input type="time">-->
+<!--<br>Select a number from this range: <input type="range">-->
+<!--<br>Choose your favorite color: <input type="color">-->
+<!--<br>What's the secret password? <input type="password">-->
+<!--<br>Search: <input type="search">-->
+<!--<br>Are you sure? <input type="checkbox">-->
+
+<!--<input type="number">-->
+<!--<input type="date">-->
+<!--<input type="color">-->
+<!--^^^works in chrome, not all browsers-->
+
+<p></p>
+<input type="checkbox">
+<!--^^^^use for yes/no questions-->
+
+<!--TEXT AREA-->
+<textarea>Default text here</textarea>
+<!--This^^^text shows up as the initial text in the box,
+and the user could keep that or change it.
+**Users are able to resize text areas-->
+
+<!--set an initial text box size with a rows and cols vvv tall and narrow-->
+<textarea rows="40" cols="20">Default text here</textarea>
+<!--OR-->
+
+<textarea rows="40" cols="50">Default text here</textarea>
+<!--^^^set this so it looks sensible on your browser-->
+<!--can still resize even if you set rows and cols-->
+
+
+<!--This is option select with the text inside showing as the option inside a dropdown menu-->
+<select>
+  <option>One</option>
+  <option>Two</option>
+  <option>Three</option>
+  <option>Four</option>
+  <option>Five</option>
+</select>
+
+<!--radio buttons with the same name attribute are part of
+the same button group-->
+
+<input type="radio">Yes
+<input type="radio">No
+
+
+<!--by default, if one is selected, the others will deselect.-->
+<!--Have to give all the radio links the same name attribute
+(here vvv name="choice"-->
+
+<p> Delivery or pickup?</p>
+<input name="delivery method" type="radio">Delivery
+<input name="delivery method" type="radio">Pickup
+
+
+
+</body>
+</html>

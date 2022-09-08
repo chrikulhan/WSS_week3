@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Github examples from Clara this week/Real_or_false_alarm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Github examples from Clara this week/class_and_id.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Github examples from Clara this week/class_and_id.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Github examples from Clara this week/style_alarm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/notes.html" afterDir="false" />
+    <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/4/2022 updates">
+      <change afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/new_HTML_practice_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML: Form and Input lecture 2/notes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/notes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,8 +55,23 @@
       <option name="presentableId" value="Default" />
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
-      <workItem from="1662300034445" duration="2248000" />
+      <workItem from="1662300034445" duration="8728000" />
     </task>
+    <task id="LOCAL-00001" summary="9/4/2022 updates">
+      <created>1662302473569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662302473569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="9/4/2022 updates">
+      <created>1662302494097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662302494097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +87,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="9/4/2022 updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/4/2022 updates" />
   </component>
 </project>
