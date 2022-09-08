@@ -32,20 +32,23 @@
 <!--^^^^use for yes/no questions-->
 
 <!--TEXT AREA-->
+<p></p>
 <textarea>Default text here</textarea>
 <!--This^^^text shows up as the initial text in the box,
 and the user could keep that or change it.
 **Users are able to resize text areas-->
 
+<p></p>
 <!--set an initial text box size with a rows and cols vvv tall and narrow-->
 <textarea rows="40" cols="20">Default text here</textarea>
 <!--OR-->
 
+<p></p>
 <textarea rows="40" cols="50">Default text here</textarea>
 <!--^^^set this so it looks sensible on your browser-->
 <!--can still resize even if you set rows and cols-->
 
-
+<p></p>
 <!--This is option select with the text inside showing as the option inside a dropdown menu-->
 <select>
   <option>One</option>
@@ -57,7 +60,7 @@ and the user could keep that or change it.
 
 <!--radio buttons with the same name attribute are part of
 the same button group-->
-
+<p></p>
 <input type="radio">Yes
 <input type="radio">No
 
@@ -70,7 +73,19 @@ the same button group-->
 <input name="delivery method" type="radio">Delivery
 <input name="delivery method" type="radio">Pickup
 
+<!--this set acts as a different group (vvv) because it has a different name attribute
+than (^^^).-->
+<p> Today or later </p>
+<input name="delivery-time" type="radio">Now
+<input name="delivery-time" type="radio">Later
 
+<!--Every input element has a value, often set by the browser.
+The value is updated behind the scenes as the user enters data.-->
+
+<!--Use a value attribute to set an initial value or default VVV-->
+<br> What's your lucky number? <input value="42" type=number">
+
+<!--stopped at approximatley 9:00 minutes?-->
 
 </body>
 </html>
