@@ -4,7 +4,6 @@
     <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/9/2022 updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML: Form and Input lecture 2/Your_turn_new_page_week_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/Your_turn_new_page_week_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML: Form and Input lecture 2/new_HTML_practice_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/new_HTML_practice_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
       <workItem from="1662300034445" duration="11064000" />
-      <workItem from="1662744941821" duration="10282000" />
+      <workItem from="1662744941821" duration="13625000" />
     </task>
     <task id="LOCAL-00001" summary="9/4/2022 updates">
       <created>1662302473569</created>
@@ -108,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662757651574</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="9/9/2022 updates">
+      <created>1662764368352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662764368352</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
