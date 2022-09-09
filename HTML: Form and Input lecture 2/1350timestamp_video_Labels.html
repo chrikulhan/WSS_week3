@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test HTML</title>
+    <title>Labels</title>
 </head>
 <body>
 
-<p>Enter your name:</p>
+<!--Labels look a lot like spans
+*Two advantages:
+1. if someone clicks the label,the input element is selected.
+This makes it easier to navigate the form, especially for checkboxes
+and radio buttons.
+2. helps assistive technology (screen readers, narrate, navigate more
+accurately.)-->
+
+<label> Today or later </label>
+<input name="delivery-time" type="radio">Now
+<input name="delivery-time" type="radio">Later
+
+<label>Enter your name:</label>
 
 <!--Several types of user input elements-->
 <!--input elements, various types - text, radio buttons, checkboxes, dates, color, email, file upload...-->
@@ -47,65 +59,67 @@ into a group, often to submit to a webserver.-->
 <!--<input type="color">-->
 <!--^^^works in chrome, not all browsers-->
 
-<p></p>
+<label></label>
 <input type="checkbox">
 <!--^^^^use for yes/no questions-->
 
 <!--TEXT AREA-->
-<p></p>
+<label></label>
 <textarea>Default text here</textarea>
 <!--This^^^text shows up as the initial text in the box,
 and the user could keep that or change it.
 **Users are able to resize text areas-->
-<p></p>
+
+<label></label>
 <!--set an initial text box size with a rows and cols vvv tall and narrow-->
 <textarea rows="40" cols="20">Default text here</textarea>
 <!--OR-->
 
-<p></p>
+<label></label>
 <textarea rows="40" cols="50">Default text here</textarea>
 <!--^^^set this so it looks sensible on your browser-->
 <!--can still resize even if you set rows and cols-->
 
-<p></p>
+<label></label>
 <input type="text" value="chris">
 <!--^^^Set initial text to something-->
 
 <!--Set a default number value for inputs: vvv-->
-<p></p>
+<label></label>
 <input type="number" value="0">
 <!--^^^where value is the starting value, could be any number-->
 
-<p></p>
+<label></label>
 <!--This is option select with the text inside showing as the option inside a dropdown menu-->
 <select>
-  <option>One</option>
-  <option>Two</option>
-  <option>Three</option>
-  <option>Four</option>
-  <option>Five</option>
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+    <option>Four</option>
+    <option>Five</option>
 </select>
 
 <!--radio buttons with the same name attribute are part of
-the same button group-->
-<p></p>
-<input type="radio">Yes
-<input type="radio">No
+the same button group.
+The choice name is surrounded by a label (<label>choice name</label>)as well.-->
+<label></label>
+<input type="radio"><label>Yes</label>
+<input type="radio"><label>No</label>
 
 
 <!--by default, if one is selected, the others will deselect.-->
 <!--Have to give all the radio links the same name attribute
 (here vvv name="choice"-->
 
-<p> Delivery or pickup?</p>
+<label> Delivery or pickup?</label>
 <input name="delivery-method" type="radio"><label>Delivery</label>
 <input name="delivery-method" type="radio"><label>Pickup</label>
 
 <!--this set acts as a different group (vvv) because it has a different name attribute
 than (^^^).-->
-<p> Today or later </p>
-<input name="delivery-time" type="radio">Now
-<input name="delivery-time" type="radio">Later
+<label> Today or later </label>
+<input name="delivery-time" type="radio"><label>Now</label>
+<input name="delivery-time" type="radio"><label>Later</label>
 
 <!--Every input element has a value, often set by the browser.
 The value is updated behind the scenes as the user enters data.-->
@@ -114,9 +128,9 @@ The value is updated behind the scenes as the user enters data.-->
 <br> What's your lucky number? <input value="42" type=number">
 
 <!--To choose a radio box (checkbox) to be checked:vvv-->
-<p>Orange or apple?</p>
-<input name="delivery-method" type="radio">Orange
-<input checked name="delivery-method" type="radio">Apple
+<label> Now or later?</label>
+<input name="delivery-method" type="radio"><label>Now</label>
+<input checked name="delivery-method" type="radio"><label>Pickup</label>
 <!--^^^to have one of the options checked, you need to place the
 name checked after the input, *NOT* at the end. (Could also say:
 checked = true, because it's a boolean, not necessary.-->
@@ -131,8 +145,56 @@ and radio buttons.
 2. helps assistive technology (screen readers, narrate, navigate more
 accurately.)--
 SO, I changed all paragraph <p></p> elements to <label></label>--timestamp 1350-->
+<!--Also for radio buttons, add <label></label>) surrounding the choices-->
 
+<!--Labels are inline elements, so you can add divisions (divs) to
+make the page more readable.-->
 
+<!--Labels and ids have to associate the two together in order for the
+radio buttons to select. The way
+to do that is to give the input an id, and then give the label
+a full attribute.For example:
+(*Give the input element an id
+*Give the label a *for* attribute, with same value as the input's id
+*Same process for textarea and select elements)
+-->
 
+<!--before-->
+<p>Enter your name:</p>
+<input type="text">
+
+<!--add labels-->
+<label> Enter your name:</label>
+<input type="text">
+
+<!--add for attribute-->
+<label for="user-name">Enter your name:</label>
+<input id="user-name" type="text">
+
+<!--something similar with radio buttons:
+*ids must be unique, so these are named differently.-->
+<!--<br> is a line break-->
+
+<br>
+<!--before id-->
+<label> Now or later?</label>
+<input name="delivery-time" type="radio"><label>Now</label>
+<input checked name="delivery-time" type="radio"><label>Later</label>
+
+<!--****To make it so you can click on the labels AND the exact place
+where the button is do THIS:****-->
+
+<!--after id, add to both to the input and the label
+AND the for has to match the id value, with a unique id and for
+combination for pair of input elements.-->
+<br>
+<label> Now or later?</label>
+<input id="delivery-now" name="delivery-time" type="radio">
+<label for="delivery-now">Now</label>
+<input id="delivery-later" checked name="delivery-time" type="radio">
+<label for="delivery-later">Later</label>
+
+</body>
+</html>
 </body>
 </html>

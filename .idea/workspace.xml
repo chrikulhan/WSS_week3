@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/8/2022 updates">
+      <change afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/1350timestamp_video_Labels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/1844timestamp_Input_Elements_in_a_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML: Form and Input lecture 2/new_HTML_practice_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML: Form and Input lecture 2/new_HTML_practice_page.html" afterDir="false" />
     </list>
@@ -37,6 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,7 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
-      <workItem from="1662300034445" duration="10472000" />
+      <workItem from="1662300034445" duration="11064000" />
+      <workItem from="1662744941821" duration="6486000" />
     </task>
     <task id="LOCAL-00001" summary="9/4/2022 updates">
       <created>1662302473569</created>
@@ -77,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662670458611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="9/8/2022 updates">
+      <created>1662679991979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662679991979</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

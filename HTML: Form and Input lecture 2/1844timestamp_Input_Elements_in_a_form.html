@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InputElementInAForm</title>
+</head>
+<body>
+
+<!--
+*A form is used to submit data to a server
+*An input type=submit is a button, when clicked, the form is submitted
+*What data is submitted?
+
+name: value pairs of the input, text area,
+select elements inside the form
+
+*Where is the form submitted to? This is the classic method of sending
+data from a browser to a server
+-->
+
+<form>
+  <label for="username">Username:</label> <input id="username">
+  <br><label for="password">Password:</label> <input id="password" name="password" type="password">
+  <br><input type="submit">
+<!--  ^^^type="submit" is rendered as a button-->
+</form>
+<!--when your user hits the submit button, you would add some information
+to the form attribute so you can tell it how to add it to a server. -->
+<!--our browser can do some form validation
+FOR EXAMPLE:
+**It can check if an element is required
+**If an email appears to be in the form of an email.-->
+
+<!--***Validating and submitting forms***
+**Browser can do some basic validation - for example, only allowing numbers
+in number inputs
+
+**When inputs are grouped in a form, the browser can check if an input has a
+value before the form is submitted (group in forms by adding <form> before
+and </form> after.
+
+**Add required attribute
+
+**In this example, item 1 is required. The browser will show an error message
+if it doesn't have a value when the submit button is clicked
+-->
+
+<form>
+  <label for="item-1">First Item(required):</label> <input id="item-1" name="item1" required><br>
+  <label for="item-2">Second Item:</label> <input id="item-2" name="item2"><br>
+  <input type="submit">
+</form>
+
+<!--once the the user hits the submit button, if there is a server, the browser sends a message
+ to the server and then the server sends a message back to the web browser, now redirect to
+  another page, or show the user a confirmation (or something)
+  **The default behavior for the browser is to reload the same page since it's not given further
+  directions.-->
+<!--timestamp 21:30-->
+
+<!--Now we can ask the browser to do some basic input validation:-->
+<!--start with a required field:-->
+
+<!--before-->
+
+<form>
+<label for="user-name">Enter your name:</label>
+<input id="user-name" type="text">
+</form>
+
+<!--after adding validation-->
+<form>
+  <label for="user-name"required>Enter your name:</label>
+  <input id="user-name" type="text">
+</form>
+
+<!--Now when you press submit, the form says "Please fill out this field",
+if the field is empty.-->
+
+
+</body>
+</html>
