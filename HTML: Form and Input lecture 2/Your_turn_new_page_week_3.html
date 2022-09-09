@@ -10,7 +10,10 @@
 Create a form containing five inputs
 A text input for a student's name
 An email input for the student's email
-***This is not working***A textarea for comments (required)
+
+***This is not working***
+A textarea for comments (required)
+
 Radio buttons for are you a current student? The choices should be Yes and No.
 ***stopped here::: Yes should be selected when the page loads
 A submit button
@@ -22,16 +25,20 @@ Make sure you see an error message when the form is submitted, if the textarea i
 The other inputs are optional
 -->
 <form>
-  <br>Enter your name: <input type="text">
-  <br>Enter your email: <input type="email">
+  <br><label>Enter your name: <input type="text"></label></br>
+  <br><label>Enter your email: <input type="email"></label></br>
+  <br><textarea required id="comments_box" rows="10" cols="50" for="comments_box">Comments(required)</textarea>
+<!--  <input required id="comments_box" name="comment_box"></br>/-->
 
-  <label for="item-1">Comments(required):</label> <input id="item-1" name="item1" required><br>
-  <label required>textarea rows="40" cols="50">Comments(required)textarea></label>
+<!--  <br><label for="item-1">Comments(required):</label> <input id="item-1" name="item1" required></br>-->
+<!--  <label required>textarea rows="40" cols="50">Comments(required)textarea></label>-->
 <!--This^^^is wrong-->
 
   <br>Are you a current student?</br>
-  <input required type="radio">Yes
-  <input required type="radio">No
+  <input name="student?" type="radio">Yes
+  <input name="student?" type="radio">No
+  <br><input type="submit">
+
 
 </form>
 
