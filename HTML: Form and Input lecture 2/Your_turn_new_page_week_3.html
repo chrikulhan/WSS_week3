@@ -5,6 +5,42 @@
     <title>Title</title>
 </head>
 <body>
+<!--timestamp 21:18-->
+<!--Imagine you are building a student feedback site
+Create a form containing five inputs
+A text input for a student's name
+An email input for the student's email
+A textarea for comments (required)
+Radio buttons for are you a current student? The choices should be Yes and No.
+Yes should be selected when the page loads
+A submit button
+
+Give each input an id attribute, and a name attribute with a sensible value
+Use labels for each of your inputs
+Make sure the radio buttons toggle correctly
+Make sure you see an error message when the form is submitted, if the textarea is empty
+The other inputs are optional
+-->
+<form>
+  <br>Enter your name: <input type="text">
+  <br>Enter your email: <input type="email">
+  <br>What time is it? <input type="time">
+  <!--make^^^that required-->
+
+  <label>Are you a current student?</label>
+  <input required type="radio">Yes
+  <input required type="radio">No
+
+  <label for="Question-1">Are you a current student?(required):</label> <input id="Question-1" name="question1" required><br>
+  <label for="item-2">Second Item:</label> <input id="item-2" name="item2"><br>
+  <input type="submit">
+
+
+</form>
+
+
+
+
 
 </body>
 </html>
