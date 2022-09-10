@@ -1,0 +1,131 @@
+<!--Responsive design: Components on a page can be
+rearranged based on the size of the browser that's
+viewing the page. (Desktop vs. mobile device or screen size)
+-->
+
+<!--Forms are tricky to style professionally.
+
+*Is your focus content and code, rather than design?
+*How will your site look on mobile devices?
+
+*Do you just want things to look good quickly?
+*Then you can use someone else's CSS
+*CSS themes and frameworks: alternative to writing your own CSS
+  -Actually, frameworks are alternative to writing all your own CSS,
+  you'll usually need to tweak/customize, but the framework will do a
+  lot of work for you
+*Pre-packaged CSS styles
+*Helpful for quickly styling an entire site
+*Forms look especially dated without CSS and are time-consuming to style;
+  a framework can save a lot of time and result in consistent form styles
+  across your site
+*Can be customized with your own styles for buttons and forms
+*May have extra components - for example, tabs, galleries, carousels, different
+navigation browsing elements, etc.
+*Some type of grid layout system that allows for responsive design.
+*Responsive design - automatically re-organize elements for different
+  screen width
+
+***BOOTSTRAP***
+
+Pre-built CSS/JavaScript components to create consistently-styled elements;
+more elements than native HTML provides, for example; tabs, dropdown menus…
+ http://getbootstrap.com/components/
+
+Responsive Design: can design site in a grid of rows and columns. On a large
+ screen, columns are displayed in a row. On a smaller screen, columns start
+ stacking within their rows. Layout is changed dynamically as screen size
+ changed
+ *badges
+ *styel buttons
+ *carousels (of content, photos, etc.)that would slide left and right with
+ buttons
+ *drop downs.
+ *navigation things to use for your website.
+
+Need to tell the page to download and apply Bootstrap styles
+Need to modify elements so the desired Bootstrap styles are applied
+  *add a link to that framework CSS in your page's head
+  *identify elements you would like to add the custom style to
+    -do that by adding a CSS class or classes to the elements
+    -there is a list of styles for those classes
+
+
+-->
+<!--This is a copy of the new page done in the last lecture(titled:"Your_turn_new_page_week_3"):-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- ADD A JUMBOTRON (large box at the top of the page about what the website does and what it's
+  about.
+    *To do this you add a div element (<div class="jumbotron") and then the divided place that
+    you've added will be much larger. The box behind it will have a grey background by default.
+    You want to put it ABOVE the form so it shows up appropriately on the site.-->
+
+<div class="jumbotron">
+<!--  ^^^class="jumbotron" is a bootstrap style-->
+  <h1>Please share some feedback with us: <br>(anonymously is okay!)</h1>
+</div>
+
+<form>
+  <br><label>Enter your name: <input id="username" type="text"></label>
+  <br><label>Enter your email: <input id="email" type="email"></label>
+  <br><label>Comments
+  <br><textarea required rows="5" cols="40" id="comments" name="comments_box"></textarea></label>
+  <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
+
+  <br>Are you a current student?
+  <label> <input id="student?_yes" checked name="student?" type="radio"></label>Yes
+  <label><input id="student?_no" name="student?" type="radio"></label>No
+
+<!--**Notes***
+--Looking at buttons, there are multiple colors,
+a slight "hover" effect that changes the buttons when your mouse crosses them.
+Different sizes of buttons, etc.
+Also includes examples
+
+*styling a button is the same as styling an input type submit**
+For example: the blue Primary button will be styled in that way when you add:
+"btn btn-primary" to the submit input.
+
+<input class="btn btn-primary" type="submit"> See above at the submit button^^^
+
+-->
+  <!--Adding a class to style the buttons don't add any functionality.
+  They are labeled to imply what a user would think when they look at it.
+  Red buttons would indicate danger for example.-->-->
+<!--  *******-->
+
+<!--  before:
+  <br><label><input type="submit"></label>-->
+
+<!--  after first try:-->
+<!--  <br><label><input class="btn btn-primary" type="submit"></label>-->
+<!--  now the submit button is blue-->
+
+  <!--  after second try:-->
+  <br><label><input class="btn btn-outline-success" type="submit"></label>
+  <!--  now the submit button is outlined in green and has a hover effect that fills in green-->
+
+
+
+
+
+</form>
+
+</body>
+</html>
+
+<!--Margins and padding
+***Stopped on Web add bootstrap to page, sytle buttons and forms
+16:55
+-->
+
