@@ -1,0 +1,57 @@
+/*class="jumbotron" in html*/
+
+/*before changing class to "header":*/
+/*.jumbotron {*/
+/*    background-color: yellowgreen;*/
+/*    color:indigo;*/
+/*}*/
+
+/*you can also add header to the jumbotron class, and
+then style *just* the word header (without jumbotron)
+and it would work. (see <div class="jumbotron header"> in
+"HTML and CSS with forms and input.html"*/
+
+/*after adding class to header in html file:vvv*/
+/*.header {*/
+/*    background-color: yellowgreen;*/
+/*    color:indigo;*/
+/*}*/
+
+/*return back to jumbotron:vvv*/
+.jumbotron {
+    background-color: yellowgreen;
+    color:indigo;
+}
+
+/*apply style to all li elements:vvv*/
+
+li{
+    font-style: italic;
+}
+/*    apply style to all *a* elements:vvv*/
+a {
+    color: blue;
+}
+
+/*how to add a font in css:vvv*/
+
+/*add a font-family, set the font that you want,(in quotes),
+ then if a browser doesn't know this font, they will go to the next one.*/
+
+/*test font family addition:vvv*/
+/*body{*/
+/*    font-family: "Lucida Console", Monaco, monospace;*/
+/*}*/
+
+/*when choosing a font from a font library:
+1. choose the font you want.
+2. Find the library's CSS link, add that in your pagehead
+3. Then, that font name will be available as a "font-family" value
+on your page. */
+
+/*Try adding a font with google font:*/
+
+body{
+    font-family: 'Mont' ;
+}
+

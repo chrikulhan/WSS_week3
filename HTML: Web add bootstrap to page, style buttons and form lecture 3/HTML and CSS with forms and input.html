@@ -59,15 +59,27 @@ Need to modify elements so the desired Bootstrap styles are applied
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+<!--  this vvv links to the bootstrap stylesheets-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+  <!--when selecting a font family from the internet, you need to past
+  the link before your style sheet:vvv-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--  This vvv links to our personal style sheet and over-rides bootstrap
+if it comes after the above link.-->
+  <link rel="stylesheet" href="feedback_styles.css" type="text/css">
 </head>
 
 <!--add m-3 (margin size 3) to the body of the page-->
 <!--before:-->
 <!--<body> -->
 
-<!--after-->
+<!--after adding header to be used in my css file to style
+the jumbotron with different background colors, etc.:-->
+<div class="jumbotron header">
 <body class="m-3">
 
 <!-- ADD A JUMBOTRON (large box at the top of the page about what the website does and what it's
@@ -76,7 +88,10 @@ Need to modify elements so the desired Bootstrap styles are applied
     you've added will be much larger. The box behind it will have a grey background by default.
     You want to put it ABOVE the form so it shows up appropriately on the site.-->
 
-<div class="jumbotron">
+<!--before adding header:-->
+<!--<div class="jumbotron">-->
+
+<!---->
 <!--  ^^^class="jumbotron" is a bootstrap style-->
   <h1>Please share some feedback with us: <br>(anonymously is okay!)</h1>
 </div>
