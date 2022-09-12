@@ -1,0 +1,22 @@
+
+.jumbotron {
+    background-color: yellowgreen;
+    color:indigo;
+}
+
+li{
+    font-style: italic;
+}
+
+a {
+    color: blue;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif ;
+    background-color: #8e62bb;
+}
+
+.form-control{
+    font-family: 'Poppins', sans-serif;
+}

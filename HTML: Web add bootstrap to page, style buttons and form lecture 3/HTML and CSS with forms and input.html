@@ -1,22 +1,130 @@
+<!--Responsive design: Components on a page can be
+rearranged based on the size of the browser that's
+viewing the page. (Desktop vs. mobile device or screen size)
+**Because it's normal to scroll down on a mobile device, and annoying
+to scroll across, it makes sense to stack the items depending on
+what screen size the user has.
+
+**In bootstrap, the page is divided into 12 "spans"
+**If you want your various page elements to stack:
+1. create a row (add a class to a div; <div class="col-md-6">)
+2. Add columns to the row,
+  a. specify the width of the column (in how many column units)
+    -for example: there are 12 spans(or column units) crossing the width
+    of the page (in bootstrap), so to cover half the page, you would use
+    6 column units.
+  b. specify the screen width at which that column should start stacking,
+  instead of being in a horizontal row.
+  (see reference: https://getbootstrap.com/docs/4.0/layout/grid/)
+-->
+
+<!--Forms are tricky to style professionally.
+
+*Is your focus content and code, rather than design?
+*How will your site look on mobile devices?
+
+*Do you just want things to look good quickly?
+*Then you can use someone else's CSS
+*CSS themes and frameworks: alternative to writing your own CSS
+  -Actually, frameworks are alternative to writing all your own CSS,
+  you'll usually need to tweak/customize, but the framework will do a
+  lot of work for you
+*Pre-packaged CSS styles (Bootstrap, Materialize, Bulma, Foundation, etc.)
+Bootstrap http://getbootstrap.com
+Materialize https://materializecss.com
+Bulma https://bulma.io/
+Foundation https://foundation.zurb.com/
+
+*Helpful for quickly styling an entire site
+*Forms look especially dated without CSS and are time-consuming to style;
+  a framework can save a lot of time and result in consistent form styles
+  across your site
+*Can be customized with your own styles for buttons and forms
+*May have extra components - for example, tabs, galleries, carousels, different
+navigation browsing elements, etc.
+*Some type of grid layout system that allows for responsive design.
+*Responsive design - automatically re-organize elements for different
+  screen width
+
+***BOOTSTRAP***
+
+Pre-built CSS/JavaScript components to create consistently-styled elements;
+more elements than native HTML provides, for example; tabs, dropdown menus…
+ http://getbootstrap.com/components/
+
+Responsive Design: can design site in a grid of rows and columns. On a large
+ screen, columns are displayed in a row. On a smaller screen, columns start
+ stacking within their rows. Layout is changed dynamically as screen size
+ changed
+ *badges
+ *style buttons
+ *carousels (of content, photos, etc.)that would slide left and right with
+ buttons
+ *drop downs.
+ *navigation things to use for your website.
+
+Need to tell the page to download and apply Bootstrap styles
+Need to modify elements so the desired Bootstrap styles are applied
+  *add a link to that framework CSS in your page's head
+  *identify elements you would like to add the custom style to
+    -do that by adding a CSS class or classes to the elements
+    -there is a list of styles for those classes
+
+-->
+<!--This is a copy of the new page done in the last lecture(titled:"Your_turn_new_page_week_3"):-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-
+  <!--  this vvv links to the bootstrap stylesheets-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!--when selecting a font family from the internet, you need to paste
+  the link before your style sheet:vvv-->
+  <!--  <link rel="preconnect" href="https://fonts.googleapis.com">-->
+  <!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">-->
+
+  <!--  Add another font to the page (before adding a link to my stylesheet):
+   Because there are two fonts from google, they are both in the same link:vvv-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--don't forget to add the info from the google font to the CSS page (from CSS rules to specify families")-->
+
+  <!--  This vvv links to our personal style sheet and over-rides bootstrap
+if it comes after the above link.-->
   <link rel="stylesheet" href="feedback_styles.css" type="text/css">
 </head>
 
-<body class="m-3">
+<!--add m-3 (margin size 3) to the body of the page-->
+<!--before:-->
+<!--<body> -->
 
+<!--after adding header to be used in my css file to style
+the jumbotron with different background colors, etc.:-->
 <div class="jumbotron header">
+  <body class="m-3">
+
+  <!-- ADD A JUMBOTRON (large box at the top of the page about what the website does and what it's
+    about.
+      *To do this you add a div element (<div class="jumbotron") and then the divided place that
+      you've added will be much larger. The box behind it will have a grey background by default.
+      You want to put it ABOVE the form so it shows up appropriately on the site.-->
+
+  <!--before adding header:-->
+  <!--<div class="jumbotron">-->
+
+  <!---->
+  <!--  ^^^class="jumbotron" is a bootstrap style-->
   <h1>Please share some feedback with us: <br>(anonymously is okay!)</h1>
 </div>
 
+<!--add <div class="row" so that I can use these to create
+responsive design.-->
+<!--adding in some content to explain how to fill out the form:-->
 <div class="row">  <!--start of row-->
 
   <div class="col-md-5">  <!--start of first column-->
@@ -27,33 +135,134 @@
     </div>
   </div> <!--end of first column-->
 
-<div class="col-md-7">  <!--start of second column-->
-  <form class="mx-5">
-    <label>Enter your name: <input id="username" class="form-control" type="text"></label><br>
-    <label>Enter your email: <input id="email" class="form-control" type="email"></label><br>
-    <label>Comments</label><br>
-    <label><textarea required rows="5" cols="40" id="comments" class="form-control" name="comments_box"></textarea></label><br>
-    <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
+  <!-- add padding just on the left of the form:-->
+  <!--before addition:
+  <form>-->
 
-  <p class="form-text">Are you a current student?</p>
+  <!--after addition:-->
+  <!--<form class="ml-5 mr-5">-->
+  <!--  this adds padding on the left AND the right of the form of size 5-->
 
-    <div class="form-check">
-      <label><input id="student?_yes" checked name="student?" class="form-check-input" type="radio"></label>
-      <label for="Yes" class="form-check-label">Yes</label>
-<!--the "yes" works, I don't understand why it is an invalid reference-->
-    </div>
+  <!--after another addition using mx-5 for both ml-5 and mr-5, before columns-->
+  <!--<form class="mx-5">-->
 
-    <div class="form-check">
-      <label><input id="student?_no" name="student?" class="form-check-input" type="radio"></label>
-      <label for="No" class="form-check-label" >No</label>
-      <!--      the "no" works, I don't understand why it is an invalid reference-->
-    </div>
-  <div>
-    <input class="btn btn-success mt-4" type="submit" >
-  </div>
-</form>
+  <!--Now to add the second column so this can be responsive design:-->
+  <div class="col-md-7">  <!--start of second column-->
+    <form class="mx-5">
 
-</div>  <!-- End of second column -->
+      <!--Now to style the form.
+      Add the bootstrap class: form control to the name input, email input,
+       and comment text area.-->
+      <!--before:
+        <br><label>Enter your name: <input id="username" type="text"></label>-->
+      <!--    after:-->
+      <label>Enter your name: <input id="username" class="form-control" type="text"></label><br>
+      <!--before
+          <br><label>Enter your email: <input id="email" type="email"></label>-->
+      <!--after:-->
+      <label>Enter your email: <input id="email" class="form-control" type="email"></label><br>
+      <label>Comments</label><br>
+      <!--    before:
+        <br><textarea required rows="5" cols="40" id="comments" name="comments_box"></textarea></label>
+        </div>-->
+      <!--after:-->
+      <textarea required rows="5" cols="40" id="comments" class="form-control" name="comments_box"></textarea><br>
+      <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
+      <!--  ***Now to make the radio buttons look good***:
+      1. surround the radio buttons with a div, and then add **div class="form-check"**.-->
+
+      <!--  before:
+        <br>Are you a current student?
+        <label> <input id="student?_yes" checked name="student?" type="radio"></label>Yes
+        <label><input id="student?_no" name="student?" type="radio"></label>No-->
+
+      <!--  after:-->
+      <p class="form-text">Are you a current student?</p>
+      <div class="form-check">
+        <input id="student?_yes" checked name="student?" class="form-check-input" type="radio">
+        <label for="yes" class="form-check-label">Yes</label>
+      </div>
+
+      <div class="form-check">
+        <input id="student?_no" name="student?" class="form-check-input" type="radio">
+        <label for="no" class="form-check-label">No</label>
+      </div>
+
+      <!--**Notes***
+      --Looking at buttons, there are multiple colors,
+      a slight "hover" effect that changes the buttons when your pointer crosses them.
+      Different sizes of buttons, etc.
+      Also includes examples
+
+      *styling a button is the same as styling an input type submit**
+      For example: the blue Primary button will be styled in that way when you add:
+      "btn btn-primary" to the submit input.
+
+      <input class="btn btn-primary" type="submit"> See above at the submit button^^^
+
+      -->
+      <!--Adding a class to style the buttons don't add any functionality.
+      They are labeled to imply what a user would think when they look at it.
+      Red buttons would indicate danger for example.-->
+      <!--  *******-->
+
+      <!--  before:
+        <br><label><input type="submit"></label>-->
+
+      <!--  after first try:-->
+      <!--  <br><label><input class="btn btn-primary" type="submit"></label>-->
+      <!--  now the submit button is blue-->
+
+      <!--  after second try:-->
+
+      <!--  <br><label><input class="btn btn-outline-success" type="submit"></label>-->
+
+      <!--  now the submit button is outlined in green and has a hover effect that fills in green-->
+
+      <!--  Now to add a margin to the ^^^submit button.-->
+      <!--  before adding radio button classes:
+        <br><label><input class="btn btn-outline-success" type="submit"></label>-->
+
+      <!--  after adding classes:-->
+      <!--  <div>-->
+      <!--  <input class="btn btn-outline-success mt-4" type="submit" ></label>-->
+      <!--  </div>-->
+      <!--  mt-4= "margin top size 4"-->
+
+      <!--  change to a different solid submit button:vvv-->
+      <div>
+        <input class="btn btn-success mt-4" type="submit" >
+      </div>
+
+      <!--Margins and Padding:(timestamp 16:55 video 3) Bootstrap has a set of dimensions:
+      **If you want consistent spaces across an entire site, you can select
+      m-1, m-2, m-3, m-4, m-5 for different size margins (margin size 1, etc.)
+
+      **find documentation for bootstrap under the left list: utilities/spacing
+      (www.getbootstrap.com/docs/4.5/utilities/spacing)
+
+      **If you want to select certain sides, you can use:
+       -mt-3(any number) for "margin top"
+       -ml-2(any number) for "margin left"
+       -mb-2 for margin bottom
+       -mr-2 for margin right
+       -mx-2 for margin left and right
+       -my-2 for margin top and bottom
+       -blank for classes that set a margin or padding on all 4 sides of an
+      element.
+
+      **you can add to body, form, button, anything...
+
+      add class m-3 to the body of your page-->
+
+
+      <!--  Now to add a margin to the submit button. -->
+
+    </form>
+    <!--this div vvv is for the second column start to make this responsive to
+  screen size.-->
+
+  </div>  <!-- End of second column -->
 </div> <!-- End of row -->
 
 </body>
