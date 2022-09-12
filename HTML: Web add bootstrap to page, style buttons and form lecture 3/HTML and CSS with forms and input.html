@@ -1,6 +1,21 @@
 <!--Responsive design: Components on a page can be
 rearranged based on the size of the browser that's
 viewing the page. (Desktop vs. mobile device or screen size)
+**Because it's normal to scroll down on a mobile device, and annoying
+to scroll across, it makes sense to stack the items depending on
+what screen size the user has.
+
+**In bootstrap, the page is divided into 12 "spans"
+**If you want your various page elements to stack:
+1. create a row (add a class to a div; <div class="col-md-6">)
+2. Add columns to the row,
+  a. specify the width of the column (in how many column units)
+    -for example: there are 12 spans(or column units) crossing the width
+    of the page (in bootstrap), so to cover half the page, you would use
+    6 column units.
+  b. specify the screen width at which that column should start stacking,
+  instead of being in a horizontal row.
+  (see reference: https://getbootstrap.com/docs/4.0/layout/grid/)
 -->
 
 <!--Forms are tricky to style professionally.
@@ -14,7 +29,12 @@ viewing the page. (Desktop vs. mobile device or screen size)
   -Actually, frameworks are alternative to writing all your own CSS,
   you'll usually need to tweak/customize, but the framework will do a
   lot of work for you
-*Pre-packaged CSS styles
+*Pre-packaged CSS styles (Bootstrap, Materialize, Bulma, Foundation, etc.)
+Bootstrap http://getbootstrap.com
+Materialize https://materializecss.com
+Bulma https://bulma.io/
+Foundation https://foundation.zurb.com/
+
 *Helpful for quickly styling an entire site
 *Forms look especially dated without CSS and are time-consuming to style;
   a framework can save a lot of time and result in consistent form styles
@@ -37,7 +57,7 @@ Responsive Design: can design site in a grid of rows and columns. On a large
  stacking within their rows. Layout is changed dynamically as screen size
  changed
  *badges
- *styel buttons
+ *style buttons
  *carousels (of content, photos, etc.)that would slide left and right with
  buttons
  *drop downs.
@@ -49,7 +69,6 @@ Need to modify elements so the desired Bootstrap styles are applied
   *identify elements you would like to add the custom style to
     -do that by adding a CSS class or classes to the elements
     -there is a list of styles for those classes
-
 
 -->
 <!--This is a copy of the new page done in the last lecture(titled:"Your_turn_new_page_week_3"):-->
@@ -86,8 +105,8 @@ if it comes after the above link.-->
 
 <!--after adding header to be used in my css file to style
 the jumbotron with different background colors, etc.:-->
-<div class="jumbotron header">
-<body class="m-3">
+ <div class="jumbotron header">
+  <body class="m-3">
 
 <!-- ADD A JUMBOTRON (large box at the top of the page about what the website does and what it's
   about.
@@ -101,7 +120,20 @@ the jumbotron with different background colors, etc.:-->
 <!---->
 <!--  ^^^class="jumbotron" is a bootstrap style-->
   <h1>Please share some feedback with us: <br>(anonymously is okay!)</h1>
-</div>
+ </div>
+
+<!--add <div class="row" so that I can use these to create
+responsive design.-->
+<!--adding in some content to explain how to fill out the form:-->
+<div class="row">  <!--start of row-->
+
+  <div class="col-md-5">  <!--start of first column-->
+    <div class="ml-5">
+      <p>Your feedback is important to the college.</p>
+      <p>Please use this form to share your feedback with us.</p>
+      <p>Include your contact info if you would like a response.</p>
+    </div>
+  </div> <!--end of first column-->
 
 <!-- add padding just on the left of the form:-->
 <!--before addition:
@@ -111,29 +143,31 @@ the jumbotron with different background colors, etc.:-->
 <!--<form class="ml-5 mr-5">-->
 <!--  this adds padding on the left AND the right of the form of size 5-->
 
-<!--after another addition using mx-5 for both ml-5 and mr-5-->
-<form class="mx-5">
-  <div>
+<!--after another addition using mx-5 for both ml-5 and mr-5, before columns-->
+<!--<form class="mx-5">-->
+
+<!--Now to add the second column so this can be responsive design:-->
+<div class="col-md-7">  <!--start of second column-->
+  <form class="mx-5">
+
     <!--Now to style the form.
     Add the bootstrap class: form control to the name input, email input,
      and comment text area.-->
 <!--before:
   <br><label>Enter your name: <input id="username" type="text"></label>-->
 <!--    after:-->
-    <br><label>Enter your name: <input id="username" class="form-control" type="text"></label>
+    <label>Enter your name: <input id="username" class="form-control" type="text"></label><br>
 <!--before
     <br><label>Enter your email: <input id="email" type="email"></label>-->
 <!--after:-->
-    <br><label>Enter your email: <input id="email" class="form-control" type="email"></label>
-  <br><label>Comments
+    <label>Enter your email: <input id="email" class="form-control" type="email"></label><br>
+    <label>Comments</label><br>
 <!--    before:
   <br><textarea required rows="5" cols="40" id="comments" name="comments_box"></textarea></label>
   </div>-->
 <!--after:-->
-      <br><textarea required rows="5" cols="40" id="comments" class="form-control" name="comments_box"></textarea></label>
-  </div>
+    <textarea required rows="5" cols="40" id="comments" class="form-control" name="comments_box"></textarea><br>
     <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
-
 <!--  ***Now to make the radio buttons look good***:
 1. surround the radio buttons with a div, and then add **div class="form-check"**.-->
 
@@ -144,14 +178,13 @@ the jumbotron with different background colors, etc.:-->
 
 <!--  after:-->
   <p class="form-text">Are you a current student?</p>
-
   <div class="form-check">
-  <input id="student?_yes" checked name="student?" class="form-check-input" type="radio">
+    <input id="student?_yes" checked name="student?" class="form-check-input" type="radio">
     <label for="yes" class="form-check-label">Yes</label>
   </div>
 
   <div class="form-check">
-  <input id="student?_no" name="student?" class="form-check-input" type="radio">
+    <input id="student?_no" name="student?" class="form-check-input" type="radio">
     <label for="no" class="form-check-label">No</label>
   </div>
 
@@ -198,10 +231,8 @@ For example: the blue Primary button will be styled in that way when you add:
 
 <!--  change to a different solid submit button:vvv-->
   <div>
-    <input class="btn btn-success mt-4" type="submit" ></label>
+    <input class="btn btn-success mt-4" type="submit" >
   </div>
-
-
 
 <!--Margins and Padding:(timestamp 16:55 video 3) Bootstrap has a set of dimensions:
 **If you want consistent spaces across an entire site, you can select
@@ -211,13 +242,13 @@ m-1, m-2, m-3, m-4, m-5 for different size margins (margin size 1, etc.)
 (www.getbootstrap.com/docs/4.5/utilities/spacing)
 
 **If you want to select certain sides, you can use:
--mt-3(any number) for "margin top"
--ml-2(any number) for "margin left"
--mb-2 for margin bottom
--mr-2 for margin right
--mx-2 for margin left and right
--my-2 for margin top and bottom
--blank for classes that set a margin or padding on all 4 sides of an
+ -mt-3(any number) for "margin top"
+ -ml-2(any number) for "margin left"
+ -mb-2 for margin bottom
+ -mr-2 for margin right
+ -mx-2 for margin left and right
+ -my-2 for margin top and bottom
+ -blank for classes that set a margin or padding on all 4 sides of an
 element.
 
 **you can add to body, form, button, anything...
@@ -226,7 +257,13 @@ add class m-3 to the body of your page-->
 
 
 <!--  Now to add a margin to the submit button. -->
+
 </form>
+  <!--this div vvv is for the second column start to make this responsive to
+screen size.-->
+
+</div>  <!-- End of second column -->
+</div> <!-- End of row -->
 
 </body>
 </html>

@@ -43,6 +43,15 @@ a {
 /*    font-family: "Lucida Console", Monaco, monospace;*/
 /*}*/
 
+
+/*(two places to get fonts:
+*Google Fonts https://fonts.google.com/
+*Font Awesome https://fontawesome.com/ )*/
+/*(Website safe fonts: https://www.w3schools.com/cssref/css_Websafe_fonts.asp)*/
+/*some font style tips:*/
+/*https://uxplanet.org/7-things-to-remember-when-selecting-fonts-for-your-design-ec1e592266c5*/
+
+
 /*when choosing a font from a font library:
 1. choose the font you want.
 2. Find the library's CSS link, add that in your pagehead
@@ -50,7 +59,7 @@ a {
 on your page.
 4. Be sure to add the font-family as written in the
 "CSS rules to specify families" box below the link you
-added to you html header abover your css stylesheet
+added to you html header above your css stylesheet
 link.*/
 
 /*Try adding a font with google font:*/
@@ -74,3 +83,11 @@ The names, email and comments sections all have class="form-control", so that on
     font-family: font-family: 'Poppins', sans-serif;
 }
 
+/*adding web colors:
+Full list of colors: https://www.w3schools.com/colors/colors_names.asp */
+/*Hexadecimal colors:
+-Hexadecimal color picker from Google
+-https://www.google.com/search?q=hex+color+picker
+-Sites like http://paletton.com/ for creating color schemes
+-http://colormind.io/ generated colors
+*/
