@@ -47,11 +47,30 @@ a {
 1. choose the font you want.
 2. Find the library's CSS link, add that in your pagehead
 3. Then, that font name will be available as a "font-family" value
-on your page. */
+on your page.
+4. Be sure to add the font-family as written in the
+"CSS rules to specify families" box below the link you
+added to you html header abover your css stylesheet
+link.*/
 
 /*Try adding a font with google font:*/
 
 body{
-    font-family: 'Mont' ;
+    font-family: 'Montserrat', sans-serif ;
+    background-color: #8e62bb;
+}
+
+/*You can use multiple fonts on one page if you choose.
+**Recommended two or three max.
+1. One font header
+2. Different font for body, etc.
+3. Different font in form*/
+
+/*add another font to a different part of the jumbotron:
+The names, email and comments sections all have class="form-control", so that one will work:vvv
+*/
+
+.form-control{
+    font-family: font-family: 'Poppins', sans-serif;
 }
 

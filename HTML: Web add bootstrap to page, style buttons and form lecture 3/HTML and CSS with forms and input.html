@@ -62,11 +62,18 @@ Need to modify elements so the desired Bootstrap styles are applied
 <!--  this vvv links to the bootstrap stylesheets-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-  <!--when selecting a font family from the internet, you need to past
+  <!--when selecting a font family from the internet, you need to paste
   the link before your style sheet:vvv-->
+<!--  <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">-->
+
+<!--  Add another font to the page (before adding a link to my stylesheet):
+ Because there are two fonts from google, they are both in the same link:vvv-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<!--don't forget to add the info from the google font to the CSS page (from CSS rules to specify families")-->
 
   <!--  This vvv links to our personal style sheet and over-rides bootstrap
 if it comes after the above link.-->
@@ -184,10 +191,15 @@ For example: the blue Primary button will be styled in that way when you add:
   <br><label><input class="btn btn-outline-success" type="submit"></label>-->
 
 <!--  after adding classes:-->
-  <div>
-  <input class="btn btn-outline-success mt-4" type="submit" ></label>
-  </div>
+<!--  <div>-->
+<!--  <input class="btn btn-outline-success mt-4" type="submit" ></label>-->
+<!--  </div>-->
 <!--  mt-4= "margin top size 4"-->
+
+<!--  change to a different solid submit button:vvv-->
+  <div>
+    <input class="btn btn-success mt-4" type="submit" ></label>
+  </div>
 
 
 
