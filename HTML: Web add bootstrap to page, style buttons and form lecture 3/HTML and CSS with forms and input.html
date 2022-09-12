@@ -62,7 +62,13 @@ Need to modify elements so the desired Bootstrap styles are applied
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 </head>
-<body>
+
+<!--add m-3 (margin size 3) to the body of the page-->
+<!--before:-->
+<!--<body> -->
+
+<!--after-->
+<body class="m-3">
 
 <!-- ADD A JUMBOTRON (large box at the top of the page about what the website does and what it's
   about.
@@ -75,20 +81,61 @@ Need to modify elements so the desired Bootstrap styles are applied
   <h1>Please share some feedback with us: <br>(anonymously is okay!)</h1>
 </div>
 
-<form>
-  <br><label>Enter your name: <input id="username" type="text"></label>
-  <br><label>Enter your email: <input id="email" type="email"></label>
-  <br><label>Comments
-  <br><textarea required rows="5" cols="40" id="comments" name="comments_box"></textarea></label>
-  <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
+<!-- add padding just on the left of the form:-->
+<!--before addition:
+<form>-->
 
+<!--after addition:-->
+<!--<form class="ml-5 mr-5">-->
+<!--  this adds padding on the left AND the right of the form of size 5-->
+
+<!--after another addition using mx-5 for both ml-5 and mr-5-->
+<form class="mx-5">
+  <div>
+    <!--Now to style the form.
+    Add the bootstrap class: form control to the name input, email input,
+     and comment text area.-->
+<!--before:
+  <br><label>Enter your name: <input id="username" type="text"></label>-->
+<!--    after:-->
+    <br><label>Enter your name: <input id="username" class="form-control" type="text"></label>
+<!--before
+    <br><label>Enter your email: <input id="email" type="email"></label>-->
+<!--after:-->
+    <br><label>Enter your email: <input id="email" class="form-control" type="email"></label>
+  <br><label>Comments
+<!--    before:
+  <br><textarea required rows="5" cols="40" id="comments" name="comments_box"></textarea></label>
+  </div>-->
+<!--after:-->
+      <br><textarea required rows="5" cols="40" id="comments" class="form-control" name="comments_box"></textarea></label>
+  </div>
+    <!--  (reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_required)-->
+
+<!--  ***Now to make the radio buttons look good***:
+1. surround the radio buttons with a div, and then add **div class="form-check"**.-->
+
+<!--  before:
   <br>Are you a current student?
   <label> <input id="student?_yes" checked name="student?" type="radio"></label>Yes
-  <label><input id="student?_no" name="student?" type="radio"></label>No
+  <label><input id="student?_no" name="student?" type="radio"></label>No-->
+
+<!--  after:-->
+  <p class="form-text">Are you a current student?</p>
+
+  <div class="form-check">
+  <input id="student?_yes" checked name="student?" class="form-check-input" type="radio">
+    <label for="yes" class="form-check-label">Yes</label>
+  </div>
+
+  <div class="form-check">
+  <input id="student?_no" name="student?" class="form-check-input" type="radio">
+    <label for="no" class="form-check-label">No</label>
+  </div>
 
 <!--**Notes***
 --Looking at buttons, there are multiple colors,
-a slight "hover" effect that changes the buttons when your mouse crosses them.
+a slight "hover" effect that changes the buttons when your pointer crosses them.
 Different sizes of buttons, etc.
 Also includes examples
 
@@ -101,7 +148,7 @@ For example: the blue Primary button will be styled in that way when you add:
 -->
   <!--Adding a class to style the buttons don't add any functionality.
   They are labeled to imply what a user would think when they look at it.
-  Red buttons would indicate danger for example.-->-->
+  Red buttons would indicate danger for example.-->
 <!--  *******-->
 
 <!--  before:
@@ -112,20 +159,52 @@ For example: the blue Primary button will be styled in that way when you add:
 <!--  now the submit button is blue-->
 
   <!--  after second try:-->
-  <br><label><input class="btn btn-outline-success" type="submit"></label>
+
+<!--  <br><label><input class="btn btn-outline-success" type="submit"></label>-->
+
   <!--  now the submit button is outlined in green and has a hover effect that fills in green-->
 
+<!--  Now to add a margin to the ^^^submit button.-->
+<!--  before adding radio button classes:
+  <br><label><input class="btn btn-outline-success" type="submit"></label>-->
+
+<!--  after adding classes:-->
+  <div>
+  <input class="btn btn-outline-success mt-4" type="submit" ></label>
+  </div>
+<!--  mt-4= "margin top size 4"-->
 
 
 
+<!--Margins and Padding:(timestamp 16:55 video 3) Bootstrap has a set of dimensions:
+**If you want consistent spaces across an entire site, you can select
+m-1, m-2, m-3, m-4, m-5 for different size margins (margin size 1, etc.)
 
+**find documentation for bootstrap under the left list: utilities/spacing
+(www.getbootstrap.com/docs/4.5/utilities/spacing)
+
+**If you want to select certain sides, you can use:
+-mt-3(any number) for "margin top"
+-ml-2(any number) for "margin left"
+-mb-2 for margin bottom
+-mr-2 for margin right
+-mx-2 for margin left and right
+-my-2 for margin top and bottom
+-blank for classes that set a margin or padding on all 4 sides of an
+element.
+
+**you can add to body, form, button, anything...
+
+add class m-3 to the body of your page-->
+
+
+<!--  Now to add a margin to the submit button. -->
 </form>
 
 </body>
 </html>
 
-<!--Margins and padding
-***Stopped on Web add bootstrap to page, sytle buttons and forms
-16:55
--->
+
+
+
 
