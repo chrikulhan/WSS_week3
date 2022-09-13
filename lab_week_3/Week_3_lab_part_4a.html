@@ -4,44 +4,69 @@
     <meta charset="UTF-8">
     <title>Conference Registration</title>
 </head>
-<body>
+<body class="m-4">
 
-</body>
-</html>
+<h1>Conference Registration Form</h1>
 
 <form>
-    <br><label>Name: <input required id="username" type="text" maxlength="70"></label>
+   <div><label>Name(max length 70 characters):</label><br>
+       <input required name="username" id="username" type="text" maxlength="70">
 <!--    reference:https://www.w3schools.com/tags/att_input_maxlength.asp-->
-    <br><label>Password: <input required id="password" type="text"></label>
-    <br><label>Enter your email: <input required id="email" type="email"></label>
-
-    <p>T-shirt size: either small, medium or large.<br>
-    (All attendees receive a free t-shirt.) </p>
-    <select required>
-<!--        figure out how to make this required.-->
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-    </select>
-    <br>
-    <p>Birthdate:</p><input required type="date">
-
-    <p>Would you like to receive email updates?</p>
-    <label><input id="updates?_yes" checked name="updates?" type="radio"></label>Yes
-    <label><input id="updates?_no" name="updates?" type="radio"></label>No
-
-    <p>Choose the conference sessions you are interested in attending:</p>
-    <label><input id="sessions_morning" type="checkbox"></label>Morning sessions
-    <label><input id="sessions_afternoon" type="checkbox"></label>Afternoon sessions
-
-
-
-
+   </div>
 
     <div>
-        <input class="btn btn-success mt-4" type="submit" >
+    <br><label>Password:</label><br>
+        <input required name="password" id="password" type="text">
+    </div>
+
+    <div>
+    <br><label>Enter your email:</label><br>
+        <input required name="email" id="email" type="email">
+    </div>
+
+    <div>
+    <label>T-shirt size: either small, medium or large.<br>
+    (All attendees receive a free t-shirt.) </label><br>
+        <label>
+            <select required>
+        <!--        figure out how to make this required.-->
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+        </label>
+    </div>
+
+    <div>
+    <label>Birthdate:</label><br>
+        <label><input required id="birthdate" name="birthdate" type="date">
+        </label><br>
+    </div>
+
+    <div>
+    <label>Would you like to receive email updates?</label><br>
+    <label><input id="updates?_yes" checked name="updates?" type="radio"></label>Yes
+    <label><input id="updates?_no" name="updates?" type="radio"></label>No
+    </div>
+
+    <div>
+    <label>Choose the conference sessions you are interested in attending:</label><br>
+    <label><input id="sessions_morning" name="sessions_attending" type="checkbox"></label>Morning sessions
+    <label><input id="sessions_afternoon" name="sessions_attending" type="checkbox"></label>Afternoon sessions
+    </div>
+
+    <div>
+    <label>Special Requests:</label><br>
+    <label><textarea rows="7" cols="70"></textarea></label>
+    </div>
+
+    <div>
+    <label><input class="btn btn-success mt-4" type="submit"></label>
     </div>
 
     </form>
+
+</body>
+</html>
 
 

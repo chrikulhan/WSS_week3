@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/13/2022 updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3a.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4a.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4a.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/chriskulhanek/WebstormProjects/WSS_week3/lab_week_3",
     "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -63,7 +64,7 @@
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
       <workItem from="1662300034445" duration="11064000" />
-      <workItem from="1662744941821" duration="47441000" />
+      <workItem from="1662744941821" duration="50386000" />
     </task>
     <task id="LOCAL-00001" summary="9/4/2022 updates">
       <created>1662302473569</created>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663090908026</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="9/13/2022 updates">
+      <created>1663093903274</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663093903274</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
