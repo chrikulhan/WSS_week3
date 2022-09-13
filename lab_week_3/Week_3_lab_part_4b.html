@@ -5,11 +5,15 @@
       <title>Conference Registration</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="style_form_lab_part_4b.css" type="text/css">
 
       </head>
 <body class="m-4">
 
 <h1>Conference Registration Form</h1>
+
+<!-- Stopped here (need to work the style sheet and insert the gradient
+id="form-to-decorate" href="#"-->
 
 <form>
   <div><label>Name: <br>(max length 70 characters)</label><br>
@@ -30,20 +34,20 @@
     </label><br>
   </div><br>
 
-  <div class="dropdown">
+  <div>
     <label for="shirts">T-shirt size: choose small, medium or large.<br>
       (All attendees receive a free t-shirt.)
     </label><br>
 
-    <div class="dropdown-menu">
+    <div>
       <label>
         <select required name="shirts" id="shirts" class="form-control" >
         <!--https://www.w3schools.com/tags/att_select_required.asp--, except I can't
         figure out how to make this required.-->
-        <option>choose a size</option>
-        <option class="dropdown-item" name="size-shirts_small">Small</option>
-        <option class="dropdown-item" name="size-shirts_medium">Medium</option>
-        <option class="dropdown-item" name="size-shirts_large">Large</option>
+          <option>choose a size</option>
+          <option name="size-shirts_small">Small</option>
+          <option name="size-shirts_medium">Medium</option>
+          <option name="size-shirts_large">Large</option>
         </select>
       </label>
     </div>
@@ -55,7 +59,7 @@
     </label>
   </div><br>
 
-  <p class="form-text">Would you like to receive email updates?</p><br>
+  <label class="form-text"> Would you like to receive email updates?</label>
 
   <div class="form-check">
     <label><input id="updates?_yes" checked name="updates?" class="form-check-input" type="radio"></label>Yes
@@ -67,8 +71,8 @@
 
   <div>
     <label>Choose the conference sessions you are interested in attending:</label><br>
-    <label><input id="sessions_morning" name="sessions_attending" type="checkbox"></label>Morning sessions
-    <label><input id="sessions_afternoon" name="sessions_attending" type="checkbox"></label>Afternoon sessions
+    <label><input id="sessions_morning" name="sessions_attending" type="checkbox"></label>  Morning sessions
+    <label><input id="sessions_afternoon" name="sessions_attending" type="checkbox"></label>  Afternoon sessions
   </div><br>
 
   <div>
