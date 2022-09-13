@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <title>Conference Registration</title>
+</head>
+<body class="m-4">
+
+<h1>Conference Registration Form</h1>
+
+<form>
+  <div><label>Name: <br>(max length 70 characters)</label><br>
+    <input required name="username" id="username" class="form-control" type="text" maxlength="70">
+    <!--    reference:https://www.w3schools.com/tags/att_input_maxlength.asp-->
+  </div>
+
+  <div>
+    <br><label>Password:</label><br>
+    <input required name="password" id="password" class="form-control" type="text">
+  </div>
+
+  <div>
+    <br><label>Enter your email:</label><br>
+    <input required name="email" id="email" class="form-control" type="email">
+  </div><br>
+
+  <div>
+    <label for="size_shirts">T-shirt size: either small, medium or large.<br>
+      (All attendees receive a free t-shirt.) </label><br>
+    <label><select required name="size_shirts" id="shirts" >
+      <!--https://www.w3schools.com/tags/att_select_required.asp--, except I can't
+      figure out how to make this required.-->
+      <option>choose a size</option>
+      <option name="size-shirts_small">Small</option>
+      <option name="size-shirts_medium">Medium</option>
+      <option name="size-shirts_large">Large</option>
+    </select></label>
+  </div><br>
+
+  <div>
+    <label>Birthdate:</label><br>
+    <label><input required id="birthdate" name="birthdate" type="date">
+    </label>
+  </div><br>
+
+  <p class="form-text">Would you like to receive email updates?</p><br>
+
+  <div class="form-check">
+    <label><input id="updates?_yes" checked name="updates?" class="form-check-input" type="radio"></label>Yes
+  </div>
+
+  <div class="form-check">
+    <label><input id="updates?_no" name="updates?" class="form-check-input" type="radio"></label>No
+  </div><br>
+
+  <div>
+    <label>Choose the conference sessions you are interested in attending:</label><br>
+    <label><input id="sessions_morning" name="sessions_attending" type="checkbox"></label>Morning sessions
+    <label><input id="sessions_afternoon" name="sessions_attending" type="checkbox"></label>Afternoon sessions
+  </div><br>
+
+  <div>
+    <label>Special Requests:</label><br>
+    <label><textarea rows="7" cols="70" id="requests" class="form-control" name="special_requests">></textarea></label>
+  </div>
+
+  <div>
+    <label><input class="btn btn-success mt-4" type="submit"></label>
+  </div>
+
+</form>
+
+</body>
+</html>
+
+
+</title>
+</head>
+<body>
+
+</body>
+</html>

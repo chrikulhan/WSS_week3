@@ -9,7 +9,7 @@
 <h1>Conference Registration Form</h1>
 
 <form>
-   <div><label>Name(max length 70 characters):</label><br>
+   <div><label>Name: <br>(max length 70 characters)</label><br>
        <input required name="username" id="username" type="text" maxlength="70">
 <!--    reference:https://www.w3schools.com/tags/att_input_maxlength.asp-->
    </div>
@@ -22,38 +22,38 @@
     <div>
     <br><label>Enter your email:</label><br>
         <input required name="email" id="email" type="email">
-    </div>
+    </div><br>
 
     <div>
-    <label>T-shirt size: either small, medium or large.<br>
+    <label for="size_shirts">T-shirt size: either small, medium or large.<br>
     (All attendees receive a free t-shirt.) </label><br>
-        <label>
-            <select required>
-        <!--        figure out how to make this required.-->
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
-            </select>
-        </label>
-    </div>
+        <label><select required name="size_shirts" id="shirts">
+        <!--https://www.w3schools.com/tags/att_select_required.asp--, except I can't
+        figure out how to make this required.-->
+            <option>choose a size</option>
+            <option name="size-shirts_small">Small</option>
+            <option name="size-shirts_medium">Medium</option>
+            <option name="size-shirts_large">Large</option>
+        </select></label>
+    </div><br>
 
     <div>
     <label>Birthdate:</label><br>
         <label><input required id="birthdate" name="birthdate" type="date">
-        </label><br>
-    </div>
+        </label>
+    </div><br>
 
     <div>
     <label>Would you like to receive email updates?</label><br>
     <label><input id="updates?_yes" checked name="updates?" type="radio"></label>Yes
     <label><input id="updates?_no" name="updates?" type="radio"></label>No
-    </div>
+    </div><br>
 
     <div>
     <label>Choose the conference sessions you are interested in attending:</label><br>
     <label><input id="sessions_morning" name="sessions_attending" type="checkbox"></label>Morning sessions
     <label><input id="sessions_afternoon" name="sessions_attending" type="checkbox"></label>Afternoon sessions
-    </div>
+    </div><br>
 
     <div>
     <label>Special Requests:</label><br>
