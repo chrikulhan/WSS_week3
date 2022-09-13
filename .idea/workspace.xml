@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/12/2022 updates">
-      <change afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab_week_3/feedback_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab_week_3/style_program_3b.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML: Web add bootstrap to page, style buttons and form lecture 3/HTML and CSS with forms and input.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML: Web add bootstrap to page, style buttons and form lecture 3/HTML and CSS with forms and input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3a.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_3b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_week_3/style_alarm.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/style_alarm.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -29,7 +31,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2EEJW9xUPLWm0nfUras4eQehUnH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,7 +69,7 @@
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
       <workItem from="1662300034445" duration="11064000" />
-      <workItem from="1662744941821" duration="39103000" />
+      <workItem from="1662744941821" duration="44277000" />
     </task>
     <task id="LOCAL-00001" summary="9/4/2022 updates">
       <created>1662302473569</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663022921832</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="9/12/2022 updates">
+      <created>1663024375954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663024375954</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

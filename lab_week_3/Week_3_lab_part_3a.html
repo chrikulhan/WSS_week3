@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <title>State_Parks_Mn</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+<!--    font vvv-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!--    My stylesheet vvv-->
+    <link rel="stylesheet" href="style_program_3b.css" type="text/css">
 </head>
 
-<div class="jumbotron header">
-    <body class="m-3">
-    <h1>This python program extracts info randomly from Minnesota State Parks websites <br> and prints
-        it in a standard format. </h1>
+<div class="jumbotron header" class="jumbotron text-center">
+    <body class="m-5">
+    <h1>Pick Five Minnesota State Parks at random <br> and print their info for your brochure:</h1>
 </div>
+
+<div>
+    <p>This program was built to extract information from current Minnesota State Park websites.
+        It allows the programmer to automatically organize the information with correct headings and consistent
+        formatting. The aggregated information is automatically saved to a word document and could be made into a brochure. </p>
+    <pre><code>
+import random
+import requests
+from pprint import pprint
+import docx
+
+park_list_url = 'https://mn-state-parks.herokuapp.com/api/list'
+park_list = requests.get(park_list_url).json()  # gets that data
+five_random_parks = random.sample(park_list, 5)  # chooses 5 parks
+
+selected_parks_urls_list = []
+
+for park in five_random_parks:  # this will grab 5 parks from all the parks and save them to the above list
+    park_id = park['park_id']
+    park_url = 'https://mn-state-parks.herokuapp.com/api/' + park_id
+    selected_parks_urls_list.append(park_url)</code></pre>
+</div>
+
 <body>
 
 </body>
 </html>
+
+<!--Things I could add: 
+1. can I add a de-saturated photo to the jumbotron?
+2. a box behind the code text
+3. some photos of some example word documents (can I put the whole thing in a carousel?)-->

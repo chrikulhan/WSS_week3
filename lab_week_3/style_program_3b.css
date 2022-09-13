@@ -1,0 +1,11 @@
+.jumbotron {
+    background-color: maroon;
+    color:navajowhite;
+    text-align: center;
+/*(https://www.w3schools.com/cssref/pr_text_text-align.asp)*/
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #5e9882;
+    color:navajowhite;
+}
