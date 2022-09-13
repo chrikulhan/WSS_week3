@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Conference_Registration</title>
+    <title>Conference Registration</title>
 </head>
 <body>
 
 </body>
 </html>
+
+<form>
+    <br><label>Name: <input required id="username" type="text" maxlength="70"></label>
+<!--    reference:https://www.w3schools.com/tags/att_input_maxlength.asp-->
+    <br><label>Password: <input required id="password" type="text"></label>
+    <br><label>Enter your email: <input required id="email" type="email"></label>
+
+    <p>T-shirt size: either small, medium or large.<br>
+    (All attendees receive a free t-shirt.) </p>
+    <select required>
+<!--        figure out how to make this required.-->
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+    <br>
+    <p>Birthdate:</p><input required type="date">
+
+    <p>Would you like to receive email updates?</p>
+    <label><input id="updates?_yes" checked name="updates?" type="radio"></label>Yes
+    <label><input id="updates?_no" name="updates?" type="radio"></label>No
+
+    <p>Choose the conference sessions you are interested in attending:</p>
+    <label><input id="sessions_morning" type="checkbox"></label>Morning sessions
+    <label><input id="sessions_afternoon" type="checkbox"></label>Afternoon sessions
+
+
+
+
+
+    <div>
+        <input class="btn btn-success mt-4" type="submit" >
+    </div>
+
+    </form>
+
+
