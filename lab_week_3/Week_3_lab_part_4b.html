@@ -3,19 +3,21 @@
       <head>
       <meta charset="UTF-8">
       <title>Conference Registration</title>
-
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="style_form_lab_part_4b.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
       </head>
-<body class="m-4">
+<body class="m-4" >
 
 <h1>Conference Registration Form</h1>
 
 <!-- Stopped here (need to work the style sheet and insert the gradient
 id="form-to-decorate" href="#"-->
 
-<form>
+<form id="Form">
   <div><label>Name: <br>(max length 70 characters)</label><br>
     <label for="username"><input required name="username" id="username" class="form-control" type="text" maxlength="70">
     </label><br>
@@ -81,7 +83,7 @@ id="form-to-decorate" href="#"-->
   </div>
 
   <div>
-    <label><input class="btn btn-success mt-4" type="submit"></label>
+    <label><input class="btn btn-primary" type="submit"></label>
   </div>
 
 </form>

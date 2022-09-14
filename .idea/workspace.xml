@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed9ce096-7c33-49d5-8f32-72c3db06cc7d" name="Changes" comment="9/13/2022 updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4a.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4b.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/Week_3_lab_part_4b.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_week_3/style_form_lab_part_4b.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab_week_3/style_form_lab_part_4b.css" afterDir="false" />
     </list>
@@ -35,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/chriskulhanek/WebstormProjects/WSS_week3/lab_week_3",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chriskulhanek/WebstormProjects/WSS_week3/lab_week_3&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lab_week_3" />
@@ -65,7 +64,8 @@
       <updated>1662154838730</updated>
       <workItem from="1662154840114" duration="53000" />
       <workItem from="1662300034445" duration="11064000" />
-      <workItem from="1662744941821" duration="58382000" />
+      <workItem from="1662744941821" duration="58670000" />
+      <workItem from="1663109975263" duration="2466000" />
     </task>
     <task id="LOCAL-00001" summary="9/4/2022 updates">
       <created>1662302473569</created>
@@ -242,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663104223418</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="9/13/2022 updates">
+      <created>1663105610995</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663105610995</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
